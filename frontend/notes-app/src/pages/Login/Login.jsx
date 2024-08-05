@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
-import PasswordInput from "../../components/Navbar/Input/PasswordInput";
+import PasswordInput from "../../components/Input/PasswordInput";
 import { useState } from "react";
 import { validateEmail } from "../../utils/helper";
 
@@ -24,7 +24,7 @@ const Login = () => {
 
     setError("");
 
-    //Login API CALL Karenge 
+    //Login API CALL Karenge
   };
 
   return (
