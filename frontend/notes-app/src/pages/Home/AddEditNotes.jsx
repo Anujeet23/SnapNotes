@@ -15,7 +15,6 @@ const AddEditNotes = ({
   const [tags, setTags] = useState(noteData?.tags || []);
   const [error, setError] = useState(null);
 
-  //Add Note
   const addNewNote = async () => {
     try {
       const response = await axiosInstance.post("/add-note", {
@@ -40,7 +39,6 @@ const AddEditNotes = ({
     }
   };
 
-  //Edit Note
   const editNote = async () => {
     const noteId = noteData?._id;
     try {
