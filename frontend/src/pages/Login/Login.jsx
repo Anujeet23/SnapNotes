@@ -60,13 +60,14 @@ const Login = () => {
 
             <input
               type="text"
-              placeholder="Email"
+              placeholder="testuser@gmail.com"
               className="input-box"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
 
             <PasswordInput
+              placeholder="testuser@123"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
