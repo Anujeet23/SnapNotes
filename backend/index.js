@@ -19,12 +19,13 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "https://backend-notes-two.vercel.app",
+    origin: "*",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,
-    allowedHeaders: "Content-Type,Authorization",
+    allowedHeaders: "*",
   })
 );
+
 
 app.get("/", (req, res) => {
   res.json({
